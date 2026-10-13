@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" routerLink="/hoja-vida">
+      <i class="bi bi-code-slash text-primary"></i>
+      <span class="fw-bold">Parcial II</span>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-2">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/hoja-vida" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <i class="bi bi-person-badge me-1"></i> Hoja de Vida
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/aprendizaje" routerLinkActive="active">
+            <i class="bi bi-journal-text me-1"></i> Aprendizaje
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/tema-libre" routerLinkActive="active">
+            <i class="bi bi-star me-1"></i> Tema Libre
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
